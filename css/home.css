@@ -1,0 +1,364 @@
+body {
+    margin: 0px;
+    background-color: black;
+    font-family: 'Futura PT';
+    color: white;
+    width: 100%;
+}
+
+.header {
+    height: 100vh;
+    background-image: url('../img/home/agence.png');
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContent {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bandeauNavigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bandeauNavigation img {
+    width: 30%;
+}
+
+.bandeauNavigation .navigation {
+    width: 65%;
+}
+
+.bandeauNavigation .navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 250%;
+    font-family: 'Tangier Black';
+    list-style: none;
+}
+
+.bandeauNavigation .navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerContent a {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.headerContent a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.headerContent a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.headerContent a:hover span {
+    padding-right: 35px;
+}
+
+.headerContent a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.headerContent .slogan {
+    display: flex;
+    justify-content: center;
+}
+
+.headerContent .slogan span {
+    font-size: 250%;
+    font-family: 'Tangier';
+}
+
+.headerContent .slogan .rouge {
+    color: #E5272D;
+}
+
+.headerContent .slogan .gris {
+    color: #50504F;
+}
+
+.contentText {
+    margin-top: 50px;
+    height: 990px;
+    background-image: url('../img/home/formes.png');
+    background-repeat: no-repeat;
+    background-position-x: -250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentText .text {
+    width: 70%;
+    font-size: 180%;
+    text-align: left;
+    line-height: 80px;
+}
+
+.contentImg {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url('../img/home/formes_pre_footer.png');
+    background-repeat: no-repeat;
+    background-position-x: -295px;
+    background-position-y: 300px;
+}
+
+.digitale {
+    width: 80%;
+}
+
+.bio {
+    width: 80%;
+}
+
+.comDigitale, .biographie {
+    height: 330px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.comDigitale .fadedbox, .biographie .fadedbox {
+    background-color:rgba(80, 80, 79, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+    opacity: 10%;
+}
+
+
+
+
+.fadedbox:before, .fadedbox:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #E2DFDD, #3D3D3D, #C9C9C9,#4A433F, #969696, #8A8A8A, #A8A8AF, #515154, #C1C1C9,#909096);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.fadedbox:after {
+    filter: blur(50px);
+}
+
+.biographie .fadedbox {
+    background-color:rgba(229, 39, 45, 0.7);
+}
+
+.comDigitale:hover .fadedbox, .biographie:hover .fadedbox {
+    opacity: 0.8;
+}
+
+.comDigitale .titleText, .biographie .titleText {
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+.comDigitale:hover .titleText, .comDigitale:focus .titleText {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.titleText span{
+    font-family: 'Futura PT';
+    font-size: 80%;
+}
+
+.biographie:hover .titleText, .biographie:focus .titleText {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.biographie img {
+    height: 500px;
+}
+
+.contentImg a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentFooter {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentFooter img {
+    width: 25%;
+}
+
+.footerNavigation {
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerNavigation span {
+    color: white;
+    font-size: 250%;
+    font-family: 'Tangier Black';
+}
+
+.footerNavigation a {
+    text-decoration: none;
+}
+
+.footerNavigation a {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.footerNavigation a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.footerNavigation a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.footerNavigation a:hover span {
+    padding-right: 35px;
+}
+
+.footerNavigation a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.footer .reseaux {
+    height: 275px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .reseaux a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .navigationReseaux {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .navigationReseaux img {
+    width: 80%;
+}
+
+.footer .reseaux .phone {
+    font-size: 200%;
+}
+
+.copyright {
+    background-color: #1a1a1a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}

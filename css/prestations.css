@@ -1,0 +1,330 @@
+body {
+    margin: 0px;
+    background-color: black;
+    font-family: 'Futura PT';
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.headerContent {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bandeauNavigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bandeauNavigation img {
+    width: 100%;
+}
+
+.bandeauNavigation a {
+    width: 30%;
+}
+
+.bandeauNavigation .navigation {
+    width: 65%;
+}
+
+.bandeauNavigation .navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 250%;
+    font-family: 'Tangier Black';
+    list-style: none;
+}
+
+.bandeauNavigation .navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.headerContent a {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.headerContent a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.headerContent a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.headerContent a:hover span {
+    padding-right: 35px;
+}
+
+.headerContent a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.title {
+    margin: 180px 0px 180px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.titrePrincipal {
+    font-family: 'Tangier';
+    font-size: 450%;
+}
+
+.contenu {
+    width: 85%;
+    height: 1600px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenu img {
+    width: 25%;
+}
+
+.contenu .titre {
+    font-size: 150%;
+}
+
+.contenu .texte {
+    width: 65%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenu .content {
+    line-height: 50px;
+    font-size: 150%;
+}
+
+.siteVitrine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: end;
+}
+
+.plaquetteDigitale {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boutton {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.avis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.avis .bouton {
+    height: 30px;
+}
+
+.boutton a {
+    color: #ffffff;
+    height: 70px;
+    padding: 20px 30px;
+    border: white solid 1px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.bouton {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.bouton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.bouton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bouton:hover span {
+    padding-right: 25px;
+}
+
+.bouton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contentFooter {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentFooter img {
+    width: 100%;
+}
+
+.contentFooter .home {
+    width: 30%;
+}
+
+.footerNavigation {
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerNavigation a{
+    width: 100%;
+}
+
+.footerNavigation span {
+    color: white;
+    font-size: 250%;
+    font-family: 'Tangier Black';
+}
+
+.footerNavigation a {
+    text-decoration: none;
+}
+
+.footerNavigation a {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.footerNavigation a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.footerNavigation a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.footerNavigation a:hover span {
+    padding-right: 35px;
+}
+
+.footerNavigation a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.footer .reseaux {
+    height: 275px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .reseaux a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .navigationReseaux {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .navigationReseaux img {
+    width: 80%;
+}
+
+.footer .reseaux .phone {
+    font-size: 200%;
+}
+
+.copyright {
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}

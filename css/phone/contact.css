@@ -1,0 +1,314 @@
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0px;
+        background-color: black;
+        font-family: 'Futura PT';
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        height: 60vh;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+
+    .headerContent {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bandeauNavigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bandeauNavigation img {
+        width: 75%;
+    }
+
+    .bandeauNavigation a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bandeauNavigation .navigation {
+        width: 65%;
+        height: 40vh;
+    }
+
+    .bandeauNavigation .navigation ul {
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 200%;
+        font-family: 'Tangier Black';
+        list-style: none;
+    }
+
+    .bandeauNavigation .navigation li {
+        background-color: #515154;
+        box-shadow: 5px 5px 25px 1px rgb(85, 85, 85);
+        padding: 2%;
+        width: 75%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .bandeauNavigation .navigation a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .title {
+        margin: 90px 0px 90px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titrePrincipal {
+        font-family: 'Tangier';
+        font-size: 250%;
+    }
+
+    .contenu {
+        width: 85%;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .explication .contentTexte {
+        font-size: 150%;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .phoneReseaux {
+        height: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .phoneNumber {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 200%;
+    }
+
+    .phoneNumber a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .Reseaux {
+        width: 100%;
+    }
+
+    .navigationReseaux {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navigationReseaux img {
+        width: 80%;
+    }
+
+    .separationDiv {
+        width: 100%;
+        height: 2px;
+        background-color: #50504F;
+    }
+
+    .envoiMail {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        font-size: 150%;
+    }
+
+    .avis {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .avis .bouton {
+        height: 30px;
+        border: white solid 2px;
+    }
+
+    .boutton a {
+        color: #ffffff;
+        height: 70px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .bouton {
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .bouton span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        font-size: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer {
+        margin-top: 40px;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contentFooter {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contentFooter .home {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentFooter img {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .contentFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerNavigation {
+        margin-top: 25px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footerNavigation span {
+        color: white;
+        font-size: 200%;
+        font-family: 'Tangier Black';
+        background-color: #515154;
+        box-shadow: 5px 5px 25px 1px rgb(85, 85, 85);
+        padding: 5px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .footerNavigation a {
+        text-decoration: none;
+    }
+
+    .footer .reseaux {
+        height: 275px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer .reseaux a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer .navigationReseaux {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .footer .navigationReseaux img {
+        width: 75%;
+    }
+
+    .footer .reseaux .phone {
+        font-size: 150%;
+    }
+
+    .copyright {
+        width: 100%;
+        background-color: #1a1a1a;
+        height: 50px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright .texte {
+        font-size: 50%;
+    }
+
+    .copyright a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .copyright a:hover {
+        text-decoration: underline;
+    }
+}
